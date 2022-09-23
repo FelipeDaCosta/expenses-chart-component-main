@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Expenses chart component</title>
+
+</head>
+<body>
+
+  <main>
+    <div id="main-container">
+      <div id="balance-container">
+        <div id="balance-info">
+          <p class="balance-text">My balance</p>
+          <h2>$<span id="balance">921.48</span></h2>
+        </div>
+        
+        <img src="./images/logo.svg" alt="logo" id="logo-image">
+        
+      </div>
+
+      <div id="spending-container">
+        <h2>Spending - Last 7 days</h2>
+        <div id="spending-chart">
+          <div class="chart-container" id="chart-container-mon">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">mon</p>
+          </div>
+          <div class="chart-container" id="chart-container-tue">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">tue</p>
+          </div>
+          <div class="chart-container" id="chart-container-wed">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">wed</p>
+          </div>
+          <div class="chart-container" id="chart-container-thu">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">thu</p>
+          </div>
+          <div class="chart-container" id="chart-container-fri">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">fri</p>
+          </div>
+          <div class="chart-container" id="chart-container-sat">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">sat</p>
+          </div>
+          <div class="chart-container" id="chart-container-sun">
+            <p class="day-chart-value">$52.36</p>
+            <div class="day-chart"></div>
+            <p class="chart-legend">sun</p>
+          </div>
+        </div>
+        <hr>
+        <div id="month-info">
+          <div id="total-expense-month">
+            <p class="month-info-text">Total this month</p>
+            <h1 id="expense-month">$<span id="expense-month-value">478.33</span> </h1>
+          </div>
+          <div id="expense-month-variation">
+            <p id="month-variation"><span id="month-variation-value">+2.4</span>%</p>
+            <p class="month-info-text">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </main>
+
+    <script src="script.js"></script>
+
+  <!--
+  My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>

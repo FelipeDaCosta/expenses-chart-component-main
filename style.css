@@ -1,0 +1,140 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+}
+
+#main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 25rem;
+}
+
+#balance-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: hsl(10, 79%, 65%);
+    color: white;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.balance-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#balance-info > h2 {
+    margin: 0.3rem 0 0 0;
+}
+
+#logo-image {
+    width: 3.5rem;
+}
+
+
+
+#spending-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1.5rem;
+}
+
+#spending-container > h2 {
+    margin: 0;
+}
+
+#spending-container > hr {
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+    border: none;
+    height: 0.07rem;
+    margin-bottom: 1.5rem;
+}
+
+#spending-chart {
+    height: 13rem;
+    width: 100%;
+    display:flex;
+    align-items: end;
+}
+
+.chart-container {
+    width: 2.6rem;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.day-chart {
+    width: 80%;
+    height: 7rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    margin: auto;
+}
+
+.current-day {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.current-day:hover ,.day-chart:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#month-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+
+.day-chart-value {
+ background-color: hsl(25, 47%, 15%);
+ color:white;
+ border-radius: 5px;
+ padding: 0.3rem;
+ font-size: 0.7rem;
+ font-weight: 700;
+ margin-top: 0;
+ display: none;
+ text-align: center;
+}
+
+.chart-container:hover > .day-chart-value {
+    display: block;
+}
+
+.chart-legend {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: hsl(28, 10%, 53%);
+}
+
+.month-info-text {
+    font-size: 0.9rem;
+    color: hsl(28, 10%, 53%);
+    margin: 0 0 0.3rem 0;
+}
+
+#expense-month-variation {
+    text-align: right;
+}
+
+#expense-month, #month-variation {
+    margin:0;
+    font-weight: 700;
+}
+
